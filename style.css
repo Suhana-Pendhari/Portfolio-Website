@@ -1106,98 +1106,67 @@ footer {
 
 
 @media (max-width: 768px) {
-
     /* Skills Section Mobile Optimization */
     #skills {
-        padding: 40px 15px !important;
+      padding: 40px 15px;
     }
-
+  
     .skills-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
     }
-
+  
     .skill-card {
-        width: 100%;
-        height: 120px;
-        perspective: 800px;
+      width: 100%;
+      height: 120px;
+      perspective: 800px;
+      transition: transform 0.2s ease;
     }
-
+  
     .card-front h3 {
-        font-size: 1.2rem;
+      font-size: 1.2rem;
     }
-
+  
+    .card-back {
+      background: linear-gradient(135deg, #7d1bab, #cd7eec);
+      border: 2px solid #ecf0f1;
+      animation: cardGlow 2s ease-in-out infinite alternate;
+    }
+  
     .card-back p {
-        font-size: 1.2rem;
-        line-height: 1.4;
-        padding: 10px;
+      font-size: 1rem; /* Reduced from 1.2rem */
+      line-height: 1.4;
+      padding: 10px;
+      color: #fff;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      font-weight: 500;
     }
-
-    /* Mobile-friendly flip behavior */
-    .skill-card:hover .card-inner {
-        transform: none;
-    }
-
-    .skill-card:active .card-inner {
-        transform: rotateY(180deg);
-    }
-
-    /* Always show back face on mobile */
-    @media (hover: none) {
-        .card-inner {
-            transform: rotateY(180deg);
-        }
-
-        .card-front {
-            display: none;
-        }
-
-        .card-back {
-            transform: rotateY(0deg);
-            box-shadow: 0 4px 8px rgba(156, 151, 241, 0.3);
-        }
-    }
-
-    /* Better touch feedback */
-    .skill-card {
-        transition: transform 0.2s ease;
-    }
-
+  
+    /* Mobile interaction */
     .skill-card:active {
-        transform: scale(0.98);
+      transform: scale(0.98);
     }
-}
-
-
-@media (max-width: 768px) {
-    .card-back {
-        background: linear-gradient(135deg, #8e44ad, #9b59b6) !important;
-        border: 2px solid #ecf0f1;
-        box-shadow: 0 4px 15px rgba(142, 68, 173, 0.4) !important;
-    }
-
-    .card-back p {
-        color: #fff !important;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-        font-weight: 500;
-    }
-
-    /* Add subtle animation on color change */
-    .card-back {
-        animation: cardGlow 2s ease-in-out infinite alternate;
-    }
-
+  
     @keyframes cardGlow {
-        from {
-            box-shadow: 0 4px 15px rgba(142, 68, 173, 0.4);
-        }
-
-        to {
-            box-shadow: 0 4px 20px rgba(142, 68, 173, 0.6);
-        }
+      from { box-shadow: 0 4px 15px rgba(142, 68, 173, 0.4); }
+      to { box-shadow: 0 4px 20px rgba(142, 68, 173, 0.6); }
     }
-}
-
+  }
+  
+  /* Separate media query for touch devices */
+  @media (hover: none) and (max-width: 768px) {
+    .card-inner {
+      transform: rotateY(180deg);
+    }
+  
+    .card-front {
+      display: none;
+    }
+    
+    .skill-card:active .card-inner {
+      transform: rotateY(180deg) scale(0.98);
+    }
+  }
 
 @media (max-width: 768px) {
 
