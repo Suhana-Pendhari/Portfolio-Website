@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suhana - Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="fakeHeader"></nav>
+        <nav>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="left">Suhana's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/#about">About</a></li>
+                    <li><a href="/#skills">Skills</a></li>
+                    <li><a href="/#projects">Projects</a></li>
+                    <li><a href="/#education">Education</a></li>
+                    <li><a href="/Documents/Suhana_Resume.pdf" download="Suhana_Resume.pdf">Resume</a></li>
+                    <li><a href="/#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <div class="lfText">
+                    Hi, My name is <span class="purple">Suhana</span>
+                    <div>I am a Passionate</div>
+                    <span id="element"></span>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn">View My Work</a>
+                    <a href="/Documents/Suhana_Resume.pdf" download="Suhana_Resume.pdf" class="btn">Download Resume</a>
+                </div>
+            </div>
+
+            <div class="rightsection">
+                <img src="/images/developer.webp" alt="developer image">
+            </div>
+        </section>
+        <hr>
+        <section id="about">
+            <div class="about-container">
+                <div class="about-img">
+                    <img src="/images/OG.jpg" alt="Suhana Mirasab Pendhari">
+                </div>
+                <div class="about-content">
+                    <h2>About Me</h2>
+                    <p>Hi, I'm <strong>Suhana Mirasab Pendhari</strong>, a B.Tech student at <strong>Annasaheb Dange
+                            College of Engineering and Technology, Ashta</strong>.
+                        Currently in my <strong>2nd year (4th semester)</strong>, I have a strong academic record with a
+                        <strong>CGPA of 9.38</strong>.
+                    </p>
+
+                    <p>I'm passionate about <strong>Data Structures & Algorithms</strong>,
+                        <strong>Problem-Solving</strong>, and <strong>Web Development</strong>.
+                        I have experience in <strong>C, C++, Java, and Web Technologies</strong>.
+                    </p>
+
+                    <p>I'm always eager to learn and build real-world applications. Let's connect and create something
+                        amazing!</p>
+
+                    <div class="skills">
+                        <span>C</span>
+                        <span>C++</span>
+                        <span>Java</span>
+                        <span>DSA</span>
+                        <span>Web Development</span>
+                        <span>Problem Solving</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <section id="skills">
+            <h2 class="sk">Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>C</h3>
+                        </div>
+                        <div class="card-back">
+                            <p>Efficient in writing optimized C programs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>C++</h3>
+                        </div>
+                        <div class="card-back">
+                            <p>Good understanding of OOPs & STL.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Java</h3>
+                        </div>
+                        <div class="card-back">
+                            <p>Strong foundation in Java and DSA.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>DSA</h3>
+                        </div>
+                        <div class="card-back">
+                            <p>Problem-solving using data structures & algorithms.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Web Development</h3>
+                        </div>
+                        <div class="card-back">
+                            <p>Frontend development with HTML, CSS, JavaScript.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Problem Solving</h3>
+                        </div>
+                        <div class="card-back">
+                            <p>Competitive coding & logical thinking.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+
+        <section id="projects">
+            <h2 class="MyProjects">My Projects</h2>
+            <div class="projects-carousel">
+                <div class="carousel-wrapper">
+
+                    <!-- Portfolio Website -->
+                    <div class="project-card">
+                        <h3>Portfolio Website</h3>
+                        <p>A personal portfolio showcasing my skills and projects.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/yourgithub/portfolio" target="_blank" class="btn">GitHub</a>
+                            <a href="#" target="_blank" class="btn">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <!-- Pinterest Clone -->
+                    <div class="project-card">
+                        <h3>Pinterest Clone</h3>
+                        <p>Full-stack clone with authentication & image uploads.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/yourgithub/pinterest-clone" target="_blank"
+                                class="btn">GitHub</a>
+                            <a href="#" target="_blank" class="btn">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <!-- Salesforce Website Clone -->
+                    <div class="project-card">
+                        <h3>Salesforce Clone</h3>
+                        <p>Frontend clone of Salesforce website with a sleek UI.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/yourgithub/salesforce-clone" target="_blank"
+                                class="btn">GitHub</a>
+                            <a href="#" target="_blank" class="btn">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <!-- Two Good Co Website Clone -->
+                    <div class="project-card">
+                        <h3>Two Good Co Clone</h3>
+                        <p>A responsive front-end website design.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/yourgithub/two-good-co" target="_blank" class="btn">GitHub</a>
+                            <a href="#" target="_blank" class="btn">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <!-- Mood Monitoring App -->
+                    <div class="project-card">
+                        <h3>Mood Monitoring App</h3>
+                        <p>Tracks and analyzes user moods over time.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/yourgithub/mood-monitoring-app" target="_blank"
+                                class="btn">GitHub</a>
+                            <a href="#" target="_blank" class="btn">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <!-- Restaurant Management System -->
+                    <div class="project-card">
+                        <h3>Restaurant Management System</h3>
+                        <p>A restaurant order & billing system in C++.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/yourgithub/restaurant-management" target="_blank"
+                                class="btn">GitHub</a>
+                            <a href="#" target="_blank" class="btn">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <!-- University Website -->
+                    <div class="project-card">
+                        <h3>University Website</h3>
+                        <p>A university website built with HTML, CSS & JS.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/yourgithub/university-website" target="_blank"
+                                class="btn">GitHub</a>
+                            <a href="#" target="_blank" class="btn">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <!-- Skill Hub -->
+                    <div class="project-card">
+                        <h3>Skill Hub</h3>
+                        <p>An ultimate placement & learning platform.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/yourgithub/skill-hub" target="_blank" class="btn">GitHub</a>
+                            <a href="#" target="_blank" class="btn">Live Demo</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <hr>
+        <section id="education">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Education</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="/images/starIcon.png" alt="">
+                    <div class="vertical-title">
+                        B.Tech &ndash; Computer Science & Engineering (2024-2027)
+                    </div>
+                    <div class="vertical-desc">
+                        Annasaheb Dange College of Engineering & Technology (ADCET), Ashta
+                    </div>
+                    <div class="Status">&ndash; Currently Pursuing</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="/images/starIcon.png" alt="">
+                    <div class="vertical-title">
+                        Higher Secondary Education (11th - 12th) (2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        L.G.R. Purohit Kanya Prashala, Sangli</div>
+                    <div class="Status">&ndash; Completed in 2023 | Percentage: 74%</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="/images/starIcon.png" alt="">
+                    <div class="vertical-title">
+                        Secondary Education (8th - 10th) (2019-2021)
+                    </div>
+                    <div class="vertical-desc">
+                        R.S.K. School, Sangli</div>
+                    <div class="Status">&ndash; Completed in 2021 | Percentage: 80%</div>
+
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="/images/starIcon.png" alt="">
+                    <div class="vertical-title">
+                        Primary Education (1st - 7th) (2012-2018)
+                    </div>
+                    <div class="vertical-desc">
+                        M.N.P. Shala Number 1, Sangli</div>
+                    <div class="Status">&ndash; Awarded Trophy & Certificate for Good Handwriting in 7th Grade</div>
+
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="/images/starIcon.png" alt="">
+                    <div class="vertical-title">
+                        Entrance Exam (2023)
+                    </div>
+                    <div class="vertical-desc">
+                        MHT-CET 2023</div>
+                    <div class="Status">&ndash; Percentile: 92.57</div>
+
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- Contact Me Section -->
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>Let's connect! Feel free to reach out for any queries or collaborations.</p>
+
+            <div class="contact-container">
+                <!-- Left Column: Contact Details -->
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p><a href="mailto:your.email@example.com">suhanapendhari786@gamil.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <p><a href="tel:+91XXXXXXXXXX">+91 9970573403</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <p><a href="https://www.linkedin.com/in/suhana-pendhari-7a446a2a2/" target="_blank">My Linked In
+                                profile</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <p><a href="https://github.com/Suhana-Pendhari" target="_blank">Github Profile</a></p>
+                    </div>
+                </div>
+
+                <!-- Right Column: Contact Form -->
+                <div class="contact-form">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" placeholder="Your Message" rows="4" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <!-- Left Side: Branding -->
+            <div class="footer-left">
+                <h2>Suhana Mirasab Pendhari</h2>
+                <p>Passionate Developer | Problem Solver | Tech Enthusiast</p>
+            </div>
+
+            <!-- Right Side: Quick Links & Socials -->
+            <div class="footer-right">
+                <ul class="footer-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/yourgithub" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>© <span id="year"></span> Suhana-Pendhari. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
